@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+    .button-label {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #999;
+      color: #fff;
+      border-radius: 20px;
+      cursor: pointer;
+      border: none;
+    }
+
+    input[type="radio"]:checked + .button-label {
+      background-color: blue;
+      color: white;
+    }
+
+    .button {
+      border-radius: 20px;
+    }
+
+    input[type="text"] {
+      border-radius: 10px;
+      padding: 5px;
+      border: 2px solid #999;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="section-one">
+      <section id="hero">
+        <h2>How do you feel about recycling?</h2>
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" placeholder="Enter your postcode" required>
+        <p>Should the government start enforcing garbage separation and recycling schemes across your area?</p>
+        <label>
+          <span class="button-label">
+            <input type="radio" class="inner-radio" name="answer" value="yes">
+            YES
+          </span>
+        </label>
+        <label>
+          <span class="button-label">
+            <input type="radio" class="inner-radio" name="answer" value="no">
+            NO
+          </span>
+        </label>
+        <br>
+        <label for="email">E-mail Address:</label>
+        <br>
+        <input type="text" id="email" name="email" required>
+        <br>
+        <label for="number">Mobile Number:</label>
+        <br>
+        <input type="text" id="number" name="number" required>
+        <br>
+        <button class="button">Submit</button>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
